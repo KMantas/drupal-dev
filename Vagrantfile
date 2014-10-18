@@ -11,7 +11,7 @@ Vagrant.configure("2") do |config|
 
   config.vm.provider :virtualbox do |v|
     v.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
-    v.customize ["modifyvm", :id, "--memory", 4048]
+    v.customize ["modifyvm", :id, "--memory", 2048]
   end
 
   # config.vm.synced_folder "./sites", "/var/www", type: "smb"
