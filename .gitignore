@@ -1,0 +1,5 @@
+sites
+.vagrant
+.tmp/
+.librarian
+Puppetfile.lock
