@@ -1,0 +1,37 @@
+2014-04-24 Leonardo Thibes <eu@leonardothibes.com> - 1.0.5
+===========================================================
+
+ Leonardo Thibes <eu@leonardothibes.com> (1):
+ * Incluindo a extensão "php5-mcrypt" como dependência
+
+2014-02-10 Leonardo Thibes <eu@leonardothibes.com> - 1.0.4
+===========================================================
+
+ Leonardo Thibes <eu@leonardothibes.com> (1):
+  * resolvendo proble de conflito com outros modulos que usam a classe "mysql::server" #4
+
+2014-01-28 Leonardo Thibes <eu@leonardothibes.com> - 1.0.3
+===========================================================
+
+ Leonardo Thibes <eu@leonardothibes.com> (3):
+  * Incluindo módulo puppetlabs-mysql como dependência e fazendo  com que ele atualize a senha do root do MySQL #2
+  * Incluindo módulo puppetlabs-mysql como dependência e fazendo com que ele crie o vhost #1
+  * Atualizando os exemplos de uso do README.md
+
+2014-01-08 Leonardo Thibes <eu@leonardothibes.com> - 1.0.2
+===========================================================
+
+ Leonardo Thibes <eu@leonardothibes.com> (1):
+  * Implementando protecao a criação de pastas com nomes duplicados
+
+2014-01-08 Leonardo Thibes <eu@leonardothibes.com> - 1.0.1
+===========================================================
+
+ Leonardo Thibes <eu@leonardothibes.com> (1):
+  * Implementando protecao a instalacao de pacotes com nomes duplicados
+
+2014-01-02 Leonardo Thibes <eu@leonardothibes.com> - 1.0.0
+===========================================================
+
+ Leonardo Thibes <eu@leonardothibes.com> (1):
+  * Implementando as classes do módulo
