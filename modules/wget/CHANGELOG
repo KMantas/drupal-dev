@@ -1,0 +1,31 @@
+2014-02-26 Leonardo Thibes <eu@leonardothibes.com> - 1.0.4
+==========================================================
+
+ Leonardo Thibes <eu@leonardothibes.com> (1):
+  * Implementando chmod apos o download #1
+  * Implementando chmod e chgrp apos o download #2
+  * Incluindo mais exemplos de uso no README.md
+
+2014-01-13 Leonardo Thibes <eu@leonardothibes.com> - 1.0.3
+==========================================================
+
+ Leonardo Thibes <eu@leonardothibes.com> (1):
+  * Incluindo protecao contra declaracao duplicada de pacote
+
+2013-12-18 Leonardo Thibes <eu@leonardothibes.com> - 1.0.2
+==========================================================
+
+ Leonardo Thibes <eu@leonardothibes.com> (1):
+  * Implementando recurso para evitar o re-download #3
+
+2013-12-17 Leonardo Thibes <eu@leonardothibes.com> - 1.0.1
+==========================================================
+
+ Leonardo Thibes <eu@leonardothibes.com> (1):
+  * Corrigindo exemplos no README.md
+
+2013-12-17 Leonardo Thibes <eu@leonardothibes.com> - 1.0.0
+==========================================================
+
+ Leonardo Thibes <eu@leonardothibes.com> (1):
+  * Implementando as classes do módulo
