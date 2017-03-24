@@ -1,7 +1,7 @@
 # = Define: php::module
 #
 # This define installs and configures php modules
-# On Debian and derivatives it install module named php5-${name}
+# On Debian and derivatives it install module named php-${name}
 # On RedHat and derivatives it install module named php-${name}
 # If you need a custom prefix you can overload default $module_prefix parameter
 #
@@ -33,7 +33,7 @@
 #   ensure => absent,
 # }
 #
-# This will install php-apc on debian instead of php5-apc
+# This will install php-apc on debian instead of php-apc
 #
 # php::module { 'apc':
 #   module_prefix => "php-",

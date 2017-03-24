@@ -119,7 +119,7 @@ class composer(
 
       'Redhat','Centos': {
 
-        # set /etc/php5/cli/php.ini/suhosin.executor.include.whitelist = phar
+        # set /etc/php/7.0/cli/php.ini/suhosin.executor.include.whitelist = phar
         augeas { 'whitelist_phar':
           context     => '/files/etc/suhosin.ini/suhosin',
           changes     => 'set suhosin.executor.include.whitelist phar',
@@ -136,16 +136,16 @@ class composer(
       }
      'Debian': {
 
-        # set /etc/php5/cli/php.ini/suhosin.executor.include.whitelist = phar
+        # set /etc/php/7.0/cli/php.ini/suhosin.executor.include.whitelist = phar
         augeas { 'whitelist_phar':
-          context     => '/files/etc/php5/conf.d/suhosin.ini/suhosin',
+          context     => '/files/etc/php/conf.d/suhosin.ini/suhosin',
           changes     => 'set suhosin.executor.include.whitelist phar',
           require     => Package[$php_package],
         }
 
-        # set /etc/php5/cli/php.ini/PHP/allow_url_fopen = On
+        # set /etc/php/cli/php.ini/PHP/allow_url_fopen = On
         augeas{ 'allow_url_fopen':
-          context     => '/files/etc/php5/cli/php.ini/PHP',
+          context     => '/files/etc/php/7.0/cli/php.ini/PHP',
           changes     => 'set allow_url_fopen On',
           require     => Package[$php_package],
         }

@@ -14,7 +14,27 @@ sites:
             www_root: /var/www/local.artofliving.org
             listen_port: '80'
             index_files:
-                - index.php                
+                - index.php         
+        dev.artofliving.org:
+            server_name: dev.artofliving.org            
+            www_root: /var/www/dev.artofliving.org
+            listen_port: '80'
+            index_files:
+                - index.php         
+        phpmyadmin.local:
+            server_name: phpmyadmin.local           
+            www_root: /usr/share/phpMyAdmin/current
+            listen_port: '80'
+            index_files:
+                - index.php
+        mautic.aol.dev:
+            server_name: mautic.aol.dev
+            server_aliases:
+                - mautic.aol.dev
+            www_root: /var/www/mautic.aol.dev
+            listen_port: '80'
+            index_files:
+                - index.php
     databases:
         example:
             grant:
@@ -31,4 +51,20 @@ sites:
             name: unity
             user: unity
             password: unity
+            sql_file: ''
+        mautic:
+            grant:
+                - ALL
+            host: localhost
+            name: mautic
+            user: mautic
+            password: mautic
+            sql_file: ''
+        dev:
+            grant:
+                - ALL
+            host: localhost
+            name: dev
+            user: dev
+            password: dev
             sql_file: ''

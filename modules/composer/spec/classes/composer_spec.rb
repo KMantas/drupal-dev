@@ -12,9 +12,9 @@ describe 'composer' do
       php_context = '/files/etc/php.ini/PHP'
       suhosin_context = '/files/etc/suhosin.ini/suhosin'
     when 'Debian'
-      php_package = 'php5-cli'
-      php_context = '/files/etc/php5/cli/php.ini/PHP'
-      suhosin_context = '/files/etc/php5/conf.d/suhosin.ini/suhosin'
+      php_package = 'php-cli'
+      php_context = '/files/etc/php/7.0/cli/php.ini/PHP'
+      suhosin_context = '/files/etc/php/conf.d/suhosin.ini/suhosin'
     else
       php_package = 'php-cli'
       php_context = '/files/etc/php.ini/PHP'

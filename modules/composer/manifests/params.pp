@@ -28,7 +28,7 @@ class composer::params {
       $download_method = 'curl'
       $logoutput       = false
       $tmp_path        = '/tmp'
-      $php_package     = 'php5-cli'
+      $php_package     = 'php-cli'
       $curl_package    = 'curl'
       $wget_package    = 'wget'
       $php_bin         = 'php'

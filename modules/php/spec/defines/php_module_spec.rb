@@ -9,7 +9,7 @@ describe 'php::module' do
   describe 'Test standard installation' do
     let(:params) { { 'name' =>  'ps', } }
     it 'should create a package with the default OS prefix' do
-      should contain_package('PhpModule_ps').with_name('php5-ps')
+      should contain_package('PhpModule_ps').with_name('php-ps')
     end
     it 'should notify the default service' do
       should contain_package('PhpModule_ps').with_notify('Service[apache2]')

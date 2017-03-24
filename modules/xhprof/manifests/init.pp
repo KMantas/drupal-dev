@@ -28,7 +28,7 @@ class xhprof($version = '0.9.4') {
     require => [Package['build-essential'], Package['php-pear'], Package['graphviz']],
   }
 
-  file { '/etc/php5/conf.d/xhprof.ini':
+  file { '/etc/php/conf.d/xhprof.ini':
     source  => 'puppet:///modules/xhprof/xhprof.ini',
     require => Exec['xhprof-install'],
   }

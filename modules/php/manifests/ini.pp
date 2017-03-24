@@ -10,7 +10,7 @@ define php::ini (
 
   include php
 
-  file { "${config_dir}/conf.d/${target}":
+  file { "${config_dir}/fpm/conf.d/${target}":
     ensure  => 'present',
     content => template("php/${template}"),
     require => Package['php'],

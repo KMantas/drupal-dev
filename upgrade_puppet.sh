@@ -2,7 +2,7 @@
 
 PUPPET_VERSION=$(puppet --version)
 
-if [[ ${PUPPET_VERSION} != 3.*.* ]]
+if [[ ${PUPPET_VERSION} != 4.*.* ]]
 then
   apt-get install --yes lsb-release
   DISTRIB_CODENAME=$(lsb_release --codename --short)

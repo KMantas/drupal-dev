@@ -3,3 +3,5 @@ sites
 .tmp/
 .librarian
 Puppetfile.lock
+*.log
+terqw

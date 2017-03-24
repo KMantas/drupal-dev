@@ -8,12 +8,12 @@
 #     augtool> rm /augeas/load
 #     rm : /augeas/load 781
 #     augtool> set /augeas/load/myfile/lens @PHP
-#     augtool> set /augeas/load/myfile/incl /usr/local/etc/php5/cgi/php.ini
+#     augtool> set /augeas/load/myfile/incl /usr/local/etc/php/cgi/php.ini
 #     augtool> load
 #     augtool> print
 #     ...
-#     /files/usr/local/etc/php5/cgi/php.ini/soap/soap.wsdl_cache_limit = "5"
-#     /files/usr/local/etc/php5/cgi/php.ini/ldap/ldap.max_links = "-1"
+#     /files/usr/local/etc/php/cgi/php.ini/soap/soap.wsdl_cache_limit = "5"
+#     /files/usr/local/etc/php/cgi/php.ini/ldap/ldap.max_links = "-1"
 #     ...
 #     augtool> exit
 #     #

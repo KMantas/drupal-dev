@@ -62,7 +62,7 @@ For detailed info about the logic and usage patterns of Example42 modules check 
             absent => true,
         }
 
-* By default module package name is php-$title for RedHat and php5-$title . You can override this prefix.
+* By default module package name is php-$title for RedHat and php-$title . You can override this prefix.
 
         php::module { "apc":
           module_prefix => "php-"
@@ -119,15 +119,15 @@ For detailed info about the logic and usage patterns of Example42 modules check 
           source => [ "puppet:///modules/lab42/php/php.conf-${hostname}" , "puppet:///modules/lab42/php/php.conf" ],
         }
 
-* Manage php.ini files on Debian and Suse derivatives. Here the main config file path (managed with the source/template params) defaults to /etc/php5/apache2/php.ini. To manage other files, either set a different path in config_file or use the php::conf define.
+* Manage php.ini files on Debian and Suse derivatives. Here the main config file path (managed with the source/template params) defaults to /etc/php/apache2/php.ini. To manage other files, either set a different path in config_file or use the php::conf define.
 
         class { 'php':
-          config_file => '/etc/php5/apache2/php.ini',      # Default value on Ubuntu/Suse
+          config_file => '/etc/php/apache2/php.ini',      # Default value on Ubuntu/Suse
           template    => 'example42/php/php.ini-apache2.erb',
         }
 
         php::conf { 'php.ini-cli':
-          path     => '/etc/php5/cli/php.ini',
+          path     => '/etc/php/cli/php.ini',
           template => 'example42/php/php.ini-cli.erb',
         }
 

@@ -1,14 +1,15 @@
 ---
 nginx:
   phpmodules:
-    - php5-mysql
-    - php5-cli
-    - php5-curl
-    - php5-intl
-    - php5-mcrypt
-    - php5-gd
-    - php-apc
-    - php5-memcached
+    - php-mysql
+    - php-cli
+    - php-curl
+    - php-intl
+    - php-mcrypt
+    - php-gd
+    - php-memcached
+    - php-mbstring
+    - php-mongodb
   phpini:
     - display_errors = On
     - error_reporting = -1
